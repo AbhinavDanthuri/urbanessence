@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+.navbar {
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.5);
+    z-index: 10;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; 
+    width: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav ul li a, nav ul li input {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+nav ul li input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem; 
+}
+
+nav ul li input::placeholder {
+    color: white;
+    font-size: 0.8rem; 
+}
+
+nav ul li a:hover, nav ul li input:focus {
+    border-bottom: 2px solid white;
+}
+
+nav ul li .cart-icon img {
+    height: 24px;
+    width: auto;
+}
+
+.cart-icon #cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 0.8rem;
+}
+/* Chatbot Container Styles */
+.chatbot-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 25px;
+}
+
+.chatbot-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #222;
+}
+
+/* Chatbox Styles */
+#chatbox {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: 500px;
+    overflow-y: auto;
+    margin-top: 2rem;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 60%;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+}
+
+/* Input Styles */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#userInput {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#userInput:focus {
+    border-color: #0084ff;
+}
+
+button {
+    padding: 15px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #0084ff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+.cart-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img 
+    .cart-icon img {
+        width: 20px; 
+        height: auto;
+        display: block; 
+        margin-top: -3px; 
+    }
+    
