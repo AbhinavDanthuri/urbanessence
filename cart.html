@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - UrbanEssence</title>
+    <link rel="stylesheet" href="./assests/css/styles.css">
+    <link rel="icon" href="./assests/logo/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <img src="./assests/logo/logo.png" alt="UrbanEssence Logo" class="logo">
+            <h1>UrbanEssence</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <label for="search" class="visually-hidden">Search</label>
+                    <input type="text" id="search" placeholder="Search...">
+                </li>
+                <li><a href="cart.html" class="cart-icon"><img src="./assests/cart.png" alt="Cart"><span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main class="container">
+        <h2 class="text-center mb-4">Shopping Cart</h2>
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-summary">
+            <h3>Summary</h3>
+            <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+            <p>Tax (10%): ₹<span id="tax">0.00</span></p>
+            <p>Shipping: ₹<span id="shipping">0.00</span></p>
+            <p><strong>Total: ₹<span id="total">0.00</span></strong></p>
+        </div>
+        <div class="checkout-form">
+            <h3>Billing Details</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" required>
+                </div>
+                <button type="submit" class="btn">Checkout</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 UrbanEssence. All rights reserved.</p>
+    </footer>
+    <script src="./assests/javascript/scripts.js"></script>
+</body>
+</html>

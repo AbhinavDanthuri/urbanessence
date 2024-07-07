@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanEssence Chatbot</title>
+    <link rel="stylesheet" href="./assests/css/chatbot.css">
+    <link rel="icon" href="./assests/logo/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <img src="./assests/logo/logo.png" alt="UrbanEssence Logo" class="logo">
+            <h1>UrbanEssence</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                </li>
+                <li>
+                    <input type="text" id="search" placeholder="Search...">
+                </li>
+                <li><a href="cart.html" class="cart-icon"><i class='bx bxs-cart'></i></a></li> 
+                <li><a href="login.html" class="profile-icon"><i class='bx bxs-user'></i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="chatbot-container">
+        <h2>Customer Support Chatbot</h2>
+        <div id="chatbox">
+            <div id="messages"></div>
+            <div class="input-group">
+                <input type="text" id="userInput" placeholder="Type your message here..." onkeypress="if(event.key === 'Enter') sendMessage()">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assests/javascript/chatbot.js"></script>
+</body>
+</html>
+
